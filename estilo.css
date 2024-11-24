@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: url(img/textura.png);
+    color: #383838;
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: 30px auto;
+    border: 2px solid #383838;
+}
+/* SECCION INICIO */
+.inicio h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    background-color: #383838;
+    color: #fff;
+    padding: 7px;
+}
+.inicio nav{
+    display: flex;
+    justify-content: space-between;
+}
+.inicio .nav-responsive{
+    display: flex;
+    display: none;
+    justify-content: space-between;
+}
+
+
+
+.circle-placeholder {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('https://i.postimg.cc/s2MLfh72/Whats-App-Image-2024-11-24-at-11-19-22-AM.jpg');
+    background-color: #d3d3d3; /* Color de fondo del círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Nuevas propiedades para centrar la imagen */
+    background-size: cover; /* La imagen cubrirá todo el círculo */
+    background-position: center; /* La imagen se centra en el círculo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+
+
+.circle-placeholder .circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inicio .nav-responsive .opcion{
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #383838;
+    transition: .3s;
+}
+.inicio nav .opcion{
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #383838;
+    transition: .3s;
+}
+.inicio nav .opcion:hover{
+    color: #fff;
+    background-color: #383838;
+}
+.selected{
+    background-color:#b4ffc9;
+    color: #000;
+}
+.inf{
+    border-bottom: 2px solid #383838;
+}
+.der{
+    border-right: 2px solid #383838;
+}
+.sup{
+    border-top: 2px solid #383838;
+}
+
+.blog{
+    padding: 0px 0; 
+    margin-bottom: 0;
+    border-bottom: 2px solid #383838;
+}
+.inicio .fila{
+    display: flex;
+}
+.inicio .fila .col{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.inicio .fila .col .info{
+    padding: 50px;
+}
+.inicio .fila .col h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.inicio .fila .col .redes
+
+.inicio .fila .col p{
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+.inicio .fila .col .redes a{
+    color: #383838;
+    font-size: 22px;
+    justify-content: center;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-right: 35px;
+}
+.inicio .fila .col .redes a:hover{
+    color:#7550bf;
+}
+.inicio .fila .col .btn-descargar{
+    position: absolute;
+    bottom: 0;
+    background-color: #cdb4ff;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #383838;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .fila .col .btn-descargar:hover{
+    background-color: #7550bf;
+    color: #fff;
+}
+.inicio .fila .col img{
+    width: 100%;
+    display: block;
+}
+.separador{
+    height: 50px;
+}
+
+
+/* SECCION HABILIDADES */
+.titulo-seccion{
+    font-family: 'satisfy';
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+.habilidades .fila{
+    display: flex;
+}
+.habilidades .fila .col{
+    padding: 50px 20px;
+}
+.habilidades .fila .col h3{
+    margin-bottom: 7px;
+}
+
+
+.habilidades .fila .container-skill{
+    width: 90%;
+    margin: 10px auto;
+    border: 2px solid #000;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+
+.habilidades .fila .container-skill .fill-skill{
+    width: 0%;
+    background-color: #383838;
+    transition: none;
+}
+.habilidades .fila .col:hover .container-skill #html{
+    width: 95% !important;
+}
+.habilidades .fila .col:hover .container-skill #css{
+    width: 98% !important;
+}
+.habilidades .fila .col:hover .container-skill #js{
+    width: 80% !important;
+}
+.habilidades .fila .col:hover .container-skill #bd{
+    width: 85% !important;
+}
+.habilidades .fila .col:hover .container-skill #python{
+    width: 75% !important;
+}
+.habilidades .fila .col:hover .container-skill #photoshop{
+    width: 75% !important;
+}
+
+/* SECCION PORFOLIO */
+.porfolio .fila{
+    display: flex;
+}
+.porfolio .fila .col{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+.porfolio .fila .col h2{
+    text-align: center;
+    padding: 10px;
+}
+.porfolio .fila .col img{
+    width: 100%;
+    display: block;
+    filter: grayscale();
+    transition: .3s;
+}
+.porfolio .fila .col:hover img{
+    filter: grayscale(0);
+}
+.porfolio .fila .col h2{
+    margin-bottom: 7px;
+}
+.porfolio .fila .col p{
+    margin-bottom: 7px;
+}
+.porfolio .fila .col .btn-ver{
+    position: absolute;
+    bottom: -50px;
+    opacity: 0;
+    background-color:#7550bf;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color:#fff;
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    transition: .3s;
+}
+.porfolio .fila .col:hover .btn-ver{
+    bottom: 0;
+    opacity: 1;
+}
+/* SECCION BLOG */
+.blog .fila{
+    display: flex;
+    margin-bottom: 0px;
+}
+.blog .fila img{
+    width: 100%;
+}
+.blog .fila .col{
+    padding: 20px;
+    position: relative;
+}
+.blog .fila .col header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.blog .fila .col header .fecha{
+    background-color: #383838;
+    color: #fff;
+    padding: 2px 7px;
+    font-size: 14px;
+}
+.blog .fila .col p{
+    font-style: italic;
+}
+.purple{
+    background-color: #cdb4ff;
+}
+.green{
+    background-color: #b4ffc9
+}
+.blog .fila .col .btn-leer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    color: #383838;
+    text-align: center;
+    padding: 7px;
+    font-size: 16px;
+    transition: .3s;
+}
+.blog .fila .col .btn-leer:hover{
+    background-color: #7550bf;
+    color: #fff;
+}
+/* SECCION CONSULTA */
+.contacto .fila{
+    background-color: #383838;
+    color: #fff;
+    display: flex;
+    padding: 40px 20px;
+}
+.contacto .fila .col label{
+    display: block;
+    margin-bottom: 7px;
+
+}
+.contacto .fila .col{
+    width: 50%;
+}
+.contacto .fila .col input{
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+.contacto .fila .col textarea{
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    height: 150px;
+}
+.contacto .fila .col .btn-enviar{
+    background-color: #cdb4ff;
+    display: block;
+    width: 80%;
+    text-decoration: none;
+    color: #383838;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.contacto .fila .col .btn-enviar:hover{
+    background-color: #7550bf;
+    color: #fff;
+}
+.contacto .fila .info{
+    display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+.contacto .fila .info h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #b4ffc9;
+    font-weight: bold;
+}
+
+/* seccion responsive */
+@media screen and (max-width: 600px) {
+    .inicio nav{
+        display: none;
+    }
+    .inicio .nav-responsive{
+        display: flex;
+    }
+    .inicio .fila{
+        display: block;
+    }
+    .inicio .fila .col{
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .inicio .fila .col .btn-descargar{
+        position: relative;
+    }
+    .inicio .fila .col img{
+        width: 50%;
+        margin: auto;
+    }
+    .habilidades .fila{
+        display: block;
+    }
+    .porfolio .fila {
+        display: block;
+    }
+    .porfolio .fila .col img{
+        width: 80%;
+        margin: auto;
+    }
+    .blog .fila{
+        display: block;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+    .contacto .fila .col input{
+        width: 100%;
+    }
+    .contacto .fila .col textarea{
+        width: 100%;
+    }
+    .contacto .fila .col .btn-enviar{
+        width: 100%;
+    }
+
+    .copy-icon {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200%; /* Ajusta al 100% del contenedor */
+    height: 805px; /* Ajusta la altura según tus necesidades */
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 620;
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    height: 100%; /* Asegura que el slide ocupe toda la altura del slider */
+}
+
+.slide img {
+    width: 90%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Ajusta la imagen sin recortarla */
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+/* Añade estilos para las flechas */
+button.prev:focus, button.next:focus {
+    outline: none;
+}
+/* Oculta los botones si no hay imágenes suficientes para desplazarse */
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+button.prev, button.next {
+    display: none; /* Ocultar por defecto */
+}
+/* Solo muestra los botones si hay más de un slide */
+.slider:has(.slides > .slide:nth-of-type(n+2)) button.prev,
+.slider:has(.slides > .slide:nth-of-type(n+2)) button.next {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px; /* Ajusta esto para centrar las flechas verticalmente */
+    color: #CDB5FE;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+
